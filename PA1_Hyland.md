@@ -54,7 +54,7 @@ hist(act.sum$sum.steps,
      xlab = "Steps per day")
 ```
 
-![](PA1_template_files/figure-html/histogram-1.png)<!-- -->
+![](PA1_Hyland_files/figure-html/histogram-1.png)<!-- -->
 
 
 ```r
@@ -98,7 +98,7 @@ ggplot(data = time.series, aes(x = interval, y = avg.steps)) +
         legend.text = element_text(size = 14))
 ```
 
-![](PA1_template_files/figure-html/time_series-1.png)<!-- -->
+![](PA1_Hyland_files/figure-html/time_series-1.png)<!-- -->
 
 
 ```r
@@ -159,7 +159,7 @@ hist(act.comp.sum$sum.steps,
      xlab = "Steps per day")
 ```
 
-![](PA1_template_files/figure-html/histogram_noNA-1.png)<!-- -->
+![](PA1_Hyland_files/figure-html/histogram_noNA-1.png)<!-- -->
 
 We can see that the histogram appears very different. There are fewer days with a very small number of steps and more days with a number of steps that is closer to the center of the distribution. The distribution looks more symmetrical.
 
@@ -223,6 +223,6 @@ xyplot(avg.steps ~ interval | is.weekend, data = time.series,
        ylab="Steps", xlab="Interval")
 ```
 
-![](PA1_template_files/figure-html/timeseries_weekend-1.png)<!-- -->
+![](PA1_Hyland_files/figure-html/timeseries_weekend-1.png)<!-- -->
 
 Differences between weekday and weekend pattern - There is a prominent peek near the beginning of the day on weekdays that is not there on the weekends. Overall the weekend pattern looks more even throughout the day. Perhaps this person gets more consistent physical activity throughout the day on weekends and only walks early in the day on weekdays.
